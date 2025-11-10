@@ -36,7 +36,6 @@ Aplicația este scalabilă, sigură și gândită pentru a fi ușor de extins î
 ##  Backlog & User Stories
 
 Am utilizat GitHub Projects pentru a organiza sarcinile în echipă.  
-Link către board: [https://github.com/users/biancaaaq/projects/3]
 
 User stories:
 1. Ca utilizator neînregistrat, vreau să pot vedea meciurile live și cotele asociate pe pagina principală, pentru a decide dacă vreau să mă înregistrez și să pariez, având acces la o listă actualizată în timp real. 
@@ -62,15 +61,6 @@ User stories:
 - [x] Diagrama UML a componentelor backend [`/Diagrama UML a componentelor backend.jpg`](https://github.com/biancaaaq/BettingApp/blob/main/Diagrama%20UML%20a%20componentelor%20backend.jpg)
 
 
-##  Source control cu Git
-
-- Repository organizat pe ramuri `frontend/`, `backend/`
-- Branches: https://github.com/biancaaaq/BettingApp/branches
-- Commits: https://github.com/biancaaaq/BettingApp/commits/
-- Raportare bug:[aici](https://github.com/biancaaaq/BettingApp/issues/5)
-- Rezolvare cu pull request: [aici](https://github.com/biancaaaq/BettingApp/pulls?q=is%3Apr+is%3Aclosed)
-
-
 ##  Testare automată
 
 Framework-uri utilizate:
@@ -79,11 +69,11 @@ Framework-uri utilizate:
 
  Ce teste sunt implementate:
 
- Backend (JUnit): [teste](https://github.com/biancaaaq/BettingApp/tree/backend/src/test/java/proiect/bet/sportbet)
+ Backend (JUnit): [teste](https://github.com/baidocc/BettingApp/tree/backend/src/test/java/proiect/bet/sportbet)
 - Teste unitare pentru serviciile de gestionare a biletelor și balanței
 - Validarea token-ului JWT și a logicii de autentificare
 
- Frontend (React Testing Library): [teste](https://github.com/biancaaaq/BettingApp/tree/frontend/src/__tests__)
+ Frontend (React Testing Library): [teste](https://github.com/baidocc/BettingApp/tree/frontend/src/__tests__)
 - Teste pentru componente importante: `TicketSidebar`, `BileteMele`, `AddTranzactie`, `AddBalanta`
 - Verificarea afișării corecte a formularului, mesajelor de succes/eroare și redirecționării după acțiuni
 - Simularea apelurilor către API pentru a testa comportamentul aplicației fără backend real
@@ -99,14 +89,14 @@ Framework-uri utilizate:
 
 În cadrul dezvoltării aplicației, am utilizat următoarele patternuri de design, specifice arhitecturii moderne web:
 
-- **Singleton** – aplicat serviciilor din backend (ex: [service](https://github.com/biancaaaq/BettingApp/tree/backend/src/main/java/proiect/bet/sportbet/service) ), pentru a asigura existența unei singure instanțe a fiecărui serviciu și a facilita injectarea controlată prin Spring.
+- **Singleton** – aplicat serviciilor din backend (ex: [service](https://github.com/baidocc/BettingApp/tree/backend/src/main/java/proiect/bet/sportbet/service) ), pentru a asigura existența unei singure instanțe a fiecărui serviciu și a facilita injectarea controlată prin Spring.
 - **MVC (Model–View–Controller)** – pattern adoptat nativ în Spring Boot, care separă clar logica de business (Service), manipularea datelor (Repository) și interfața cu utilizatorul (Controller).
 - **DTOs (Data Transfer Objects)** – folosite pentru a transmite date între backend și frontend într-un mod controlat, evitând expunerea directă a entităților din baza de date.
 
 
 ##  Prompt Engineering
 
-Pe parcursul dezvoltării, am utilizat AI pentru asistență și automatizare: [documentare](https://github.com/biancaaaq/BettingApp/blob/main/Prompt%20Engineering.pdf)
+Pe parcursul dezvoltării, am utilizat AI pentru asistență și automatizare: [documentare](https://github.com/baidocc/BettingApp/blob/main/Prompt%20Engineering.pdf)
 
 
 
